@@ -3,6 +3,10 @@ package com.example.faisal_notesapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ContextMenu
+import android.view.MenuInflater
+import android.view.View
+import android.widget.ImageView
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -18,6 +22,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
     lateinit var searchNotes:SearchView
     lateinit var notesViewModel:NotesViewModel
     lateinit var notesAdapter: NoteAdapter
+    lateinit var aboutMe: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +55,11 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         searchNotes.setOnQueryTextListener(this)
         searchNotes.isSubmitButtonEnabled = true
 
+        aboutMe = findViewById(R.id.aboutMe)
+        aboutMe.setOnClickListener {
+                startActivity(Intent(this,AboutUs::class.java))
+        }
+
 
     }
 
@@ -76,5 +86,4 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
         })
     }
-
 }

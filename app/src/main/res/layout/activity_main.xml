@@ -7,6 +7,8 @@
     tools:context=".MainActivity">
 
 
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="145dp"
@@ -56,7 +58,18 @@
 
             />
 
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:id="@+id/aboutMe"
+            android:src="@drawable/ic_baseline_keyboard_command_key_24"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="300dp"
+            />
+
     </androidx.cardview.widget.CardView>
+
+
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
