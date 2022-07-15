@@ -33,6 +33,7 @@ class AddNoteActivity : AppCompatActivity() {
             val newNote : Note = Note(0,nTitle,nText)
             notesViewModel.addNote(newNote)
             Toast.makeText(this,"Succsesfully added new Note",Toast.LENGTH_SHORT).show()
+            finish()
 
         }
 

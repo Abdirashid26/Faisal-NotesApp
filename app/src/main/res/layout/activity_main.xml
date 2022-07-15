@@ -9,7 +9,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="145dp"
         android:backgroundTint="@color/myOrange"
         android:id="@+id/block"
         android:layout_marginTop="-20dp"
@@ -46,6 +46,16 @@
                 />
         </LinearLayout>
 
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/searchTxt"
+            android:layout_marginTop="105dp"
+            android:background="@color/white"
+
+            />
+
     </androidx.cardview.widget.CardView>
 
 
@@ -61,25 +71,8 @@
         />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchTxt"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/block"
-        app:endIconMode="custom"
-        app:endIconDrawable="@drawable/ic_baseline_search_24"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
 
-        >
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:hint="search"
-            android:inputType="text"/>
-    </com.google.android.material.textfield.TextInputLayout>
+
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -87,7 +80,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/myNotesList"
         android:layout_marginTop="5dp"
-        android:layout_below="@id/searchTxt"
+        tools:listitem="@layout/my_note_item"
+        android:layout_below="@id/block"
         android:layout_margin="20dp"
         />
 
