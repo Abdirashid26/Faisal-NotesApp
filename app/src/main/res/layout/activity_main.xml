@@ -6,59 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/myOrange"
-        android:id="@+id/block"
-        />
-    <View
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:id="@+id/wave"
-        android:layout_below="@id/block"
-        android:background="@drawable/ic_wave"/>
+        android:backgroundTint="@color/myOrange"
+        android:id="@+id/block"
+        android:layout_marginTop="-20dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heading"
+                android:text="My Notes"
+                android:layout_marginTop="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/mabook"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="39sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/uber"
+                android:textStyle="italic"
+                android:text="simple and easy !"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
-    <TextView
-        android:layout_width="match_parent"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/heading"
-        android:text="My Notes"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:fontFamily="@font/mabook"
-        android:layout_margin="20dp"
-        android:textSize="25sp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/addNote"
+        app:rippleColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
         />
 
-
-    <ImageView
-        android:id="@+id/add"
-        android:layout_width="55dp"
-        android:layout_height="45dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="65dp"
-        android:layout_marginRight="55dp"
-        android:src="@drawable/ic_add_icon_svgrepo_com" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/searchTxt"
-        android:layout_marginTop="-40dp"
-        android:layout_below="@id/wave"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/block"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_baseline_search_24"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
+
         >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:hint="search"
-            android:lineHeight="0dp"
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 

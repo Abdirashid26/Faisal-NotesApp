@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNoteActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/myOrange"
+        android:id="@+id/block"
+        android:layout_marginTop="-20dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heading"
+                android:text="Edit Note"
+                android:layout_marginTop="43dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/mabook"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="30sp"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/block"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            app:endIconMode="clear_text"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noteTitle"
+                android:hint="Title"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            app:endIconMode="clear_text"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:id="@+id/noteText"
+                android:lines="12"
+                android:maxLines="14"
+                android:minLines="6"
+                android:scrollbars="vertical"
+                android:hint="Notes"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateNote"
+                android:backgroundTint="@color/myOrange"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"
+                app:cornerRadius="20dp"
+                app:rippleColor="@color/white"
+                android:text="Update Note"
+                />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteNote"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/myOrange"
+            android:layout_marginHorizontal="10dp"
+            app:cornerRadius="20dp"
+            app:rippleColor="@color/myOrange"
+            android:text="Delete Note"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

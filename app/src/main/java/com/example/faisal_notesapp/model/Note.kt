@@ -3,6 +3,7 @@ package com.example.faisal_notesapp.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.android.material.textfield.TextInputEditText
+import java.io.Serializable
 
 @Entity(tableName = "notes")
 data class Note (
@@ -10,4 +11,4 @@ data class Note (
     var id : Int,
     var noteTitle : String,
     var noteText: String
-        )
+        ) : Serializable

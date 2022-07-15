@@ -13,6 +13,14 @@ class NotesRepo(val notesDao: NotesDao) {
         notesDao.addNote(note)
     }
 
+    suspend fun updateNote(note: Note){
+        notesDao.updateNote(note)
+    }
+
+    suspend fun deleteNote(note: Note){
+        notesDao.deleteNote(note)
+    }
+
 
 
 }
