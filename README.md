@@ -20,8 +20,7 @@ The following **required** functionality is completed:
 
 Here are the pages in the App:
 
-Home - (DISPLAY ALL Notes)
-![Screenshot_20220806-104149_MyNotes-App]()
+Home - (DISPLAY ALL Notes) 
 <img src="https://user-images.githubusercontent.com/49816777/183241816-c715cd9d-cd0a-44cd-9e8b-6fbd2a2f2dc2.jpg" width="200">
 
 
