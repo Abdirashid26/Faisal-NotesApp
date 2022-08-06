@@ -27,12 +27,6 @@ Here are the pages in the App:
 
 
 
-![Screenshot_20220806-104140_MyNotes-App](https://user-images.githubusercontent.com/49816777/183241832-9658002f-336c-4e92-86b8-aed0c2c999ed.jpg)
-
-![Screenshot_20220806-104153_MyNotes-App](https://user-images.githubusercontent.com/49816777/183241847-9ea13392-7f99-4c56-85cb-fd2157da54a9.jpg)
-
-
-
 
 
 ## Notes
