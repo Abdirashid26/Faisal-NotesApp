@@ -21,8 +21,8 @@ The following **required** functionality is completed:
 Here are the pages in the App:
 
  
-<img src="https://user-images.githubusercontent.com/49816777/183241816-c715cd9d-cd0a-44cd-9e8b-6fbd2a2f2dc2.jpg" width="200">
 <img src="https://user-images.githubusercontent.com/49816777/183241832-9658002f-336c-4e92-86b8-aed0c2c999ed.jpg" width="200">
+<img src="https://user-images.githubusercontent.com/49816777/183241816-c715cd9d-cd0a-44cd-9e8b-6fbd2a2f2dc2.jpg" width="200">
 <img src="https://user-images.githubusercontent.com/49816777/183241847-9ea13392-7f99-4c56-85cb-fd2157da54a9.jpg" width="200">
 
 
