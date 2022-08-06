@@ -21,7 +21,7 @@ The following **required** functionality is completed:
 Here are the pages in the App:
 
 Home - (DISPLAY ALL Notes)
-![Screenshot_20220806-104149_MyNotes-App](https://user-images.githubusercontent.com/49816777/183241816-c715cd9d-cd0a-44cd-9e8b-6fbd2a2f2dc2.jpg)
+![Screenshot_20220806-104149_MyNotes-App](https://user-images.githubusercontent.com/49816777/183241816-c715cd9d-cd0a-44cd-9e8b-6fbd2a2f2dc2.jpg = 200x400)
 
 Add - Adding new note
 ![Screenshot_20220806-104140_MyNotes-App](https://user-images.githubusercontent.com/49816777/183241832-9658002f-336c-4e92-86b8-aed0c2c999ed.jpg)
